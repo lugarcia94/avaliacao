@@ -1,15 +1,28 @@
 ﻿@model List<DomainProduct.Entities.Category>
-
+@{
+	string _classSearch = Session["idEventList"] == null ? "search" : "filterListEventsProducts";
+}
 <div class="ui container fluid menuheader">
     <div class="overlapblackbg"></div>
     <div class="ui container">
+
         <div class="wsmobileheader clearfix">
             <a id="wsnavtoggle" class="animated-arrow"><span></span></a>
         </div>
+        <span class="logo__resp">
+            <a href="/Home" title="Página Inicial">
+                <img class="ui middle aligned image logo" src="/assets/image/logo/logoresp.png" alt="@LojaCorp.Control.Company._Company.FantasyName" title="@LojaCorp.Control.Company._Company.FantasyName">
+            </a>
+        </span>
         <div class="wsmain">
             <nav class="wsmenu">
-                <div class="ui mobile only titleMenu"><i class="content icon"></i> MENU</div>
+                <!-- <div class="ui mobile only titleMenu"><i class="content icon"></i> MENU</div> -->
                 <ul class="mobile-sub wsmenu-list ui menu">
+                    <span class="logo">
+                        <a href="/Home" title="Página Inicial">
+                            <img class="ui middle aligned image logo" src="/assets/image/logo/logo.png" alt="@LojaCorp.Control.Company._Company.FantasyName" title="@LojaCorp.Control.Company._Company.FantasyName">
+                        </a>
+                    </span>
                     @foreach (DomainProduct.Entities.Category category in Model)
                     {
                         if (category.Level.Length == 2)
@@ -83,8 +96,40 @@
                             </li>
                         }
                     }
+
+                    <div class="ui center aligned seven wide tablet seven wide computer column searchcolumn">
+                        <div class="ui category @_classSearch">
+                            <div class="ui icon input fluid">
+                                <input class="prompt" type="text" placeholder="Buscar...">
+                                <i class="search icon"></i>
+                            </div>
+                            <div class="results"></div>
+                        </div>
+				    </div> 
                 </ul>
             </nav>
         </div>
+
+        <div class="cart__topo logo__resp">
+            <div id="cartButton" class="ui labeled button cartbutton mini-cart no margin bottom" tabindex="0" data-segment="@(Session["segment"] != null ? Session["segment"] : "b2c")">
+                <div class="ui basic primary button ">
+                    <i class="cart icon"></i>
+                    <!-- <span>@(Session["idEventList"] == null && Session["EventList"] == null ? "Meu Carrinho" : "Minha Lista")</span> -->
+                </div>
+                <a class="ui left pointing primary label" id="total_itens_card">
+                    @{
+                        if (Session["EventList"] == null)
+                        {
+                            @Html.Action("TotalItensCart", "Checkout")
+                        }else
+                        {
+                            @Html.Action("TotalItensList", "EventList")
+                        }
+                    }
+                    
+                </a>
+            </div>
+        </div>
+
     </div>
 </div>

@@ -2,3 +2,214 @@
 	padding: 0.4em 0.4em;
 	text-align: inherit;
 }
+.row.divided.horizontal.stackable {
+    max-width: 1170px;
+    margin: 0 auto;
+	padding: 0 15px;
+	
+	.ui.container {
+		order: -1;
+	}
+}
+
+.ui.two.column.centered.grid.stackable.middle.aligned.breadcrumbs { 
+	.row {
+		max-width: 1170px;
+		margin: 15px auto;
+		padding: 0 15px;
+		display: flex;
+		justify-content: flex-start;
+
+		h1 {
+			display: none;
+		}
+	}
+}
+.ui.divider.container {
+	display: none;
+}
+.ui.breadcrumb .active.section {
+    font-weight: bold;
+	font-size: 15px;
+}
+
+.twelve.wide.column {
+	order: -1;
+	box-shadow: none!important;
+}
+.filtros .ui.accordion .title.active {
+    border-top: 1px solid #EEEEEE;
+	border-bottom: 1px solid #EEEEEE;
+}
+.filtros .ui.accordion .title {
+	box-shadow: inset 1px 0 0 #EEEEEE!important;
+}
+.ui.cards > .card > .content, .ui.card > .content {
+	padding: 16px 0;
+}
+.dados a h3 {
+    text-transform: uppercase;
+    font-weight: 700!important;
+    font-size: 16px!important;
+	color: #2a2a2a;
+}
+i.search.icon {
+    color: #fff;
+	opacity: 1!important;
+}
+.card.produto .content .info .botoes .btnDetalhes {
+    background: #3bb6b2;
+    color: #fff;
+	text-transform: uppercase;
+}
+span.installmentMaxNumber, span.installmentMaxValue {
+	color: #3bb6b2;
+}
+.ui.two.column.centered.grid.stackable.middle.aligned {
+    max-width: 1170px;
+    margin: auto;
+	padding: 0 15px;
+
+	.container {
+		padding: 0;
+		width: 100%;
+		display: flex;
+		
+		.ui.breadcrumb.margin.top.medium {
+			font-size: 16px;
+			margin: 0!important;
+			margin-top: 15px!important;
+		}
+		.ui.breadcrumb .section:last-child {
+			color: #3bb6b2;
+		}
+	}
+}	
+
+.ui.divider {
+	display: none!important;
+}
+.ui.container.margin.bottom.large {
+    max-width: 1170px!important;
+    padding: 0 15px!important;
+}
+
+.product.information h1 {
+    margin-top: 10px!important;
+    text-transform: uppercase!important;
+	color: #3bb6b2!important;
+}
+
+h6.codProduto {
+	font-size: 14px!important;
+}
+
+.infoProduto .blocoInfo .blocoValores .blocoPreco .preco {
+    font-weight: 700;
+	color: #3bb6b2;
+}
+
+.img-selecionado > img {
+	border: 3px rgb(59, 182, 178) solid !important;
+}
+
+.ui.button {
+	background: #3bb6b2!important;
+    color: #fff!important;
+}
+.ui.grey.button {
+	background-color: #3bb6b2!important;
+}
+.infoProduto .blocoInfo .blocoValores {
+	border-bottom: 0;
+}
+#pagamento-calculado .formas-pagamento {
+	border-bottom: 1px solid #ddd;
+}
+.column h5 {
+    text-transform: uppercase;
+    color: #3bb6b2;
+}
+.ui.accordion .title:not(.ui) {
+	color: #3bb6b2!important;
+	text-transform: uppercase;
+}
+.menu.tabular .item.active {
+    color: #3bb6b2 !important;
+}
+#buy-together a {
+    font-weight: bold;
+    font-size: 14px;
+    color: #3bb6b2;
+	text-transform: uppercase;
+}
+#buy-together .ui.table thead th {
+    background-color: #22ba44;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 0 !important;
+	text-transform: uppercase;
+}
+.slick-prev {
+    top: 50%;
+	left: 0!important;
+	max-height: 25px;
+}
+.slick-next {
+    top: 50%;
+	right: 0!important;
+	max-height: 25px;
+}
+.ui.basic.black.buttons .button, .ui.basic.black.button {
+    -webkit-box-shadow: 0px 0px 0px 1px #1B1C1D inset !important;
+    box-shadow: 0px 0px 0px 1px #3bb6b2 inset !important;
+	color: #3bb6b2 !important;
+}
+h3.nomeProduto {
+    text-transform: uppercase;
+    color: #3bb6b2;
+}
+span#preco-floating-bar {
+    font-weight: 700;
+}
+a.ui.basic.button.fluid.variacao.produto {
+    text-transform: uppercase;
+    font-weight: 700;
+	color: #3bb6b2!important;
+}
+.ui.items.relaxed.divided.produtos.compre.junto {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+
+	.item.product-grid {
+		display: flex;
+		flex-wrap: wrap;
+		flex: 0 0 50%;
+
+		@media(max-width: 992px) {
+			flex: 0 0 100%;
+		}
+
+		.ui.image.medium {
+			max-width: 150px;
+		}
+
+	}
+
+	#buy-together {
+		padding: 0;
+		flex: 0 0 50%;
+		border: 0!important;
+		@media(max-width: 992px) {
+			flex: 0 0 100%;
+		}
+	}
+}
+
+.ui.center.aligned.seven.wide.tablet.seven.wide.computer.column.searchcolumn {
+	@media(max-width: 992px) {
+		margin-top: 20px;
+	}
+}

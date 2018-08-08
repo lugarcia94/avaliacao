@@ -360,3 +360,70 @@
 		fill: rgba(255,0, 0, 1);
 	}
 }
+
+.ui.container.fluid.newsletter-bar {
+    display: none;
+}
+
+.footer__list {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+    width: 100%;
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: 20px auto;
+}
+.ui.inverted.header {
+	color : #5DDAD5!important;
+}
+.footer .list.link a, .footer .list.link h5 {
+	color: #fff !important;
+
+	&:hover {
+		color : #5DDAD5!important;
+	}
+}
+.footer p {
+	color: #fff!important;
+
+	&:hover {
+		color : #5DDAD5!important;
+	}
+}
+.featuredProducts {
+    max-width: 1170px;
+    padding: 0 15px;
+	margin: 0 auto;
+}
+.ui.container.topsellers {
+    max-width: 1170px!important;
+	padding: 0 15px;
+	
+	@media(max-width: 992px) {
+		padding: 0!important;
+	}
+}
+
+.linkFullBanner {
+	overflow: hidden;
+	a {
+		overflow: hidden;
+		img {
+			@media(max-width: 768px) {
+				display: block!important;
+				 position: relative!important;
+                 width: auto!important;
+                 min-width: 100%!important;
+                 max-width: none!important;
+                 left: 50%!important;
+                 -moz-transform: translateX(-50%)!important;
+                 -ms-transform: translateX(-50%)!important;
+                 -webkit-transform: translateX(-50%)!important;
+				 transform: translateX(-50%)!important;
+				 max-height: 300px!important;
+				 
+			}
+		}
+	}
+}

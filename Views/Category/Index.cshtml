@@ -5,6 +5,10 @@
     var returnUrl = HttpContext.Current.Request.Url.AbsolutePath;
 }
 
+<div class="full__category">
+<!-- ~/Views/Shared/Blocks/_CentralHalfBanner.cshtml -->
+@Html.Action("CentralHalfBanner", "Banner")
+</div>
 @section CustomSeo {
     @{
         if (!String.IsNullOrEmpty(Model.MetaDescription))

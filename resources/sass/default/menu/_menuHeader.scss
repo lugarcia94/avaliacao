@@ -1,4 +1,4 @@
-$menuBG: $primary-color;
+$menuBG: #f1f1f1;
 $menuTextColor: $white;
 $menuHeight: 50px;
 $menuHoverBorderColor: $secondary-color;
@@ -8,6 +8,8 @@ $colorLinkSubMenu: "#666";
   background-color: $menuBG;
   min-height: $menuHeight;
   width: 100%;
+  padding: 15px 0;
+  
   /*Sub Classes*/
   .ui.menu {
     background: transparent;
